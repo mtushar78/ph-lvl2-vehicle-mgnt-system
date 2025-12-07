@@ -4,7 +4,7 @@ A comprehensive backend API for managing vehicle rental operations with role-bas
 
 ## 🔗 Live Demo
 
-**Live API**: [Your Deployment URL Here]
+**Live API**: [https://ph-lvl2-vehicle-mgnt-system.vercel.app/]
 
 ## ✨ Features
 
@@ -52,8 +52,8 @@ Before running this project, ensure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/vehicle-rental-system.git
-cd vehicle-rental-system
+git clone https://github.com/mtushar78/ph-lvl2-vehicle-mgnt-system.git
+cd ph-lvl2-vehicle-mgnt-system
 ```
 
 ### 2. Install Dependencies
@@ -347,10 +347,6 @@ PORT=5000
   "errors": "Detailed error message"
 }
 ```
-
-## 📄 License
-
-This project is licensed under the ISC License.
 
 ---
 
