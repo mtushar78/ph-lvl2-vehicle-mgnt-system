@@ -1,17 +1,17 @@
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL UNIQUE,
-  password VARCHAR(255) NOT NULL,
-  phone VARCHAR(50) NOT NULL,
+  name VARCHAR(255) NOT NULL CHECK (LENGTH(TRIM(name)) > 0),
+  email VARCHAR(255) NOT NULL UNIQUE CHECK (email = LOWER(email)),
+  password VARCHAR(255) NOT NULL CHECK (LENGTH(password) >= 6),
+  phone VARCHAR(50) NOT NULL CHECK (LENGTH(TRIM(phone)) > 0),
   role VARCHAR(20) NOT NULL CHECK (role IN ('admin', 'customer'))
 );
 
 CREATE TABLE IF NOT EXISTS vehicles (
   id SERIAL PRIMARY KEY,
-  vehicle_name VARCHAR(255) NOT NULL,
+  vehicle_name VARCHAR(255) NOT NULL CHECK (LENGTH(TRIM(vehicle_name)) > 0),
   type VARCHAR(20) NOT NULL CHECK (type IN ('car', 'bike', 'van', 'SUV')),
-  registration_number VARCHAR(50) NOT NULL UNIQUE,
+  registration_number VARCHAR(50) NOT NULL UNIQUE CHECK (LENGTH(TRIM(registration_number)) > 0),
   daily_rent_price DECIMAL(10, 2) NOT NULL CHECK (daily_rent_price > 0),
   availability_status VARCHAR(20) NOT NULL CHECK (availability_status IN ('available', 'booked'))
 );

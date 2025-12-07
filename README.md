@@ -284,6 +284,7 @@ src/
 │   ├── users.service.ts
 │   └── users.routes.ts
 ├── bookings/           # Booking management
+│   ├── auto-return.ts
 │   ├── bookings.controller.ts
 │   ├── bookings.service.ts
 │   └── bookings.routes.ts
