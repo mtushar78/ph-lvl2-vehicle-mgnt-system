@@ -4,7 +4,7 @@ A comprehensive backend API for managing vehicle rental operations with role-bas
 
 ## 🔗 Live Demo
 
-**Live API**: [https://ph-lvl2-vehicle-mgnt-system.vercel.app/]
+**Live API**: https://ph-lvl2-vehicle-mgnt-system.vercel.app/
 
 ## ✨ Features
 
